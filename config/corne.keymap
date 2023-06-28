@@ -48,7 +48,9 @@
                         bindings = <
 
    &kp C_AL_NEXT_TASK &kp EXCL      &kp AT       &kp HASH      &kp DLLR       &kp PRCNT &kp CARET &kp AMPS  &kp KP_MULTIPLY &kp LPAR &kp RPAR &kp BSPC
-   &kp LCTRL          &kp PIPE      &kp C_AC_SAV &kp CLEAR     &kp C_AC_FIND  &trans    &kp MINUS &kp EQUAL &kp FSLSH       &kp LBKT &kp RBKT &kp GRAVE
+   &kp LCTRL &trans   &trans &trans   &trans   &trans      &kp MINUS &kp EQUAL &kp LBKT        &kp RBKT &kp BSLH &kp GRAVE
+   // &kp LCTRL          &kp PIPE      &kp C_AC_SAV &kp CLEAR     &kp C_AC_FIND  &trans    &kp MINUS &kp EQUAL &kp FSLSH       &kp LBKT &kp RBKT &kp GRAVE
+   // &kp LSHFT &trans   &trans &trans   &trans   &trans      &kp UNDER &kp PLUS  &kp LBRC        &kp RBRC &kp PIPE &kp TILDE
    &kp LSHFT          &kp C_AC_UNDO &kp C_AC_CUT &kp C_AC_COPY &kp C_AC_PASTE &trans    &kp UNDER &kp PLUS  &kp BLSH        &kp LBRC &kp RBRC &kp TILDE
                                                  &kp LGUI      &trans         &kp SPACE &kp RET   &trans    &kp RALT
 
