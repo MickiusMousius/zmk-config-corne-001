@@ -12,15 +12,6 @@
 #include <dt-bindings/zmk/keys.h>
 
 / {
-    combos {
-        compatible = "zmk,combos";
-
-        new_combo {
-            bindings = <&mo 3>;
-            key-positions = <37 40>;
-            layers = <>;
-        };
-    };
 
     keymap {
         compatible = "zmk,keymap";
@@ -51,8 +42,8 @@
 
             bindings = <
 &kp ESCAPE  &kp F1  &kp F2        &kp F3      &kp F4        &kp F5            &kp F6        &kp F7     &kp F8    &kp F9    &kp F10  &kp F11
-    &trans  &trans  &trans    &kp K_PREV    &kp K_PP    &kp K_NEXT            &trans  &kp UP_ARROW     &trans  &kp HOME  &kp PG_UP  &kp F12
-    &trans  &trans  &trans  &kp K_VOL_DN  &kp K_MUTE  &kp K_VOL_UP    &kp LEFT_ARROW      &kp DOWN  &kp RIGHT   &kp END  &kp PG_DN  &kp F13
+    &bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1    &kp K_PREV    &kp K_PP    &kp K_NEXT            &trans  &kp UP_ARROW     &trans  &kp HOME  &kp PG_UP  &kp F12
+    &trans  &bt BT_SEL 2  &bt BT_SEL 4  &kp K_VOL_DN  &kp K_MUTE  &kp K_VOL_UP    &kp LEFT_ARROW      &kp DOWN  &kp RIGHT   &kp END  &kp PG_DN  &kp F13
                                 &kp LGUI      &trans     &kp SPACE           &kp RET        &trans   &kp RALT
             >;
 
@@ -76,15 +67,5 @@
             label = "F Keys";
         };
 
-        layer_3 {
-            bindings = <
-&bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &none   &none  &none  &none  &none  &none
-     &none         &none         &none         &none         &none         &none    &none   &none  &none  &none  &none  &none
-     &none         &none         &none         &none         &none         &none    &none   &none  &none  &none  &none  &none
-                                               &none        &trans         &none    &none  &trans  &none
-            >;
-
-            label = "BT Config";
-        };
     };
 };
