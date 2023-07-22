@@ -30,7 +30,7 @@
                          &kp LGUI  &mo 1  &kp ENTER    &kp SPACE  &mo 2   &kp RALT
             >;
 
-            label = "Letters";
+            label = "Alpha";
         };
 
         lower_layer {
@@ -47,7 +47,7 @@
                                 &kp LGUI      &trans     &kp SPACE           &kp RET        &trans   &kp RALT
             >;
 
-            label = "Numbers";
+            label = "F Keys";
         };
 
         raise_layer {
@@ -64,7 +64,7 @@
                            &kp LGUI  &trans  &kp SPACE    &kp RET  &trans   &kp RALT
             >;
 
-            label = "F Keys";
+            label = "Nums";
         };
 
     };
