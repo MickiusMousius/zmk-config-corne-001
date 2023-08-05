@@ -63,7 +63,7 @@
 //          |            |             |             |            |              |      |                |              |           |          |           |           // 
     &trans      &trans     &bt BT_CLR   &kp C_VOL_DN   &kp C_MUTE   &kp C_VOL_UP          &kp LEFT_ARROW      &kp DOWN    &kp RIGHT    &kp END   &kp PG_DN   &kp F13
 //-------------------------------------|             |            |              |      |                |              |           |----------------------------------//  
-                                           &kp LGUI      &trans       &kp RET               &kp SPACE         &trans       &kp RALT
+                                           &kp LGUI      &trans        &trans                &trans           &trans       &kp RALT
 //                                     +-------------|------------|--------------+      +----------------|--------------|-----------+                                  //
 
             >;
@@ -80,7 +80,7 @@
 //          |          |          |          |          |           |      |           |               |          |                   |               |          // 
    &trans      &trans      &trans    &trans     &trans     &trans            &kp EQUAL      &kp MINUS    &kp LBKT   &kp RIGHT_BRACKET   &kp BACKSLASH   &trans
 //--------------------------------|          |          |           |      |           |               |          |----------------------------------------------//  
-                                    &kp LGUI    &trans    &kp SPACE           &kp RET     &trans         &kp RALT
+                                    &kp LGUI    &trans     &trans              &trans        &trans      &kp RALT
 //                                +----------|----------|-----------+      +-----------|---------------|----------+                                              //
             >;
         };
