@@ -14,6 +14,24 @@
 #include <dt-bindings/zmk/keys.h>
 
 / {
+    behaviors {
+        // Toggle F-Keys Layer
+        td0: tap_dance_0 {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TAP_DANCE_0";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&mo 1>, <&tog 1>;
+        };
+        // Toggle F-Keys layer
+        td1: tap_dance_1 {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TAP_DANCE_1";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&mo 2>, <&tog 2>;
+        };
+    };
 
     keymap {
         compatible = "zmk,keymap";
@@ -29,7 +47,7 @@
 //          |          |          |          |          |           |      |           |          |          |          |          |           //
   &kp LSHFT     &kp Z      &kp X     &kp C       &kp V      &kp B               &kp N     &kp M     &kp COMMA  &kp DOT    &kp FSLH  &kp RSHIFT
 //--------------------------------|          |          |           |      |           |          |          |---------------------------------//  
-                                    &kp LGUI     &mo 1    &kp ENTER          &kp SPACE     &mo 2    &kp RALT
+                                    &kp LGUI     &td0     &kp ENTER          &kp SPACE     &td1    &kp RALT
 //                                +----------|----------|-----------+      +-----------|----------|----------+                                 //
             >;
         };
