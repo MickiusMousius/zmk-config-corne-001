@@ -77,7 +77,7 @@
 //          |            |             |             |            |              |      |                |              |           |          |           |           // 
     &trans    &bt BT_PRV   &bt BT_NXT    &kp C_PREV    &kp C_PP     &kp C_NEXT               &trans        &kp UP_ARROW     &trans    &kp HOME   &kp PG_UP   &kp F12
 //          |            |             |             |            |              |      |                |              |           |          |           |           // 
-    &trans      &trans     &bt BT_CLR   &kp C_VOL_DN   &kp C_MUTE   &kp C_VOL_UP          &kp LEFT_ARROW      &kp DOWN    &kp RIGHT    &kp END   &kp PG_DN   &kp F13
+    &trans      &sleep     &bt BT_CLR   &kp C_VOL_DN   &kp C_MUTE   &kp C_VOL_UP          &kp LEFT_ARROW      &kp DOWN    &kp RIGHT    &kp END   &kp PG_DN   &kp F13
 //-------------------------------------|             |            |              |      |                |              |           |----------------------------------//  
                                            &kp LGUI      &trans        &trans                &trans           &trans       &kp RALT
 //                                     +-------------|------------|--------------+      +----------------|--------------|-----------+                                  //
