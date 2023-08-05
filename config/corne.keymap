@@ -14,6 +14,9 @@
 #include <dt-bindings/zmk/keys.h>
 
 / {
+    &caps_word {
+        continue-list = <UNDERSCORE MINUS>;
+    };
     behaviors {
         // Toggle F-Keys Layer
         td0: tap_dance_0 {
@@ -31,6 +34,22 @@
             tapping-term-ms = <200>;
             bindings = <&mo 2>, <&tog 2>;
         };
+        // Toggle capsword left
+        td2: tap_dance_2 {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TAP_DANCE_2";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&kp LSHFT>, <&caps_word>;
+        };
+        // Toggle capsword right
+        td3: tap_dance_3 {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TAP_DANCE_3";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&kp RSHFT>, <&caps_word>;
+        };
     };
 
     keymap {
@@ -45,7 +64,7 @@
 //          |          |          |          |          |           |      |           |          |          |          |          |           //
   &kp LCTRL     &kp A      &kp S     &kp D       &kp F      &kp G               &kp H     &kp J      &kp K      &kp L     &kp SEMI    &kp SQT
 //          |          |          |          |          |           |      |           |          |          |          |          |           //
-  &kp LSHFT     &kp Z      &kp X     &kp C       &kp V      &kp B               &kp N     &kp M     &kp COMMA  &kp DOT    &kp FSLH  &kp RSHIFT
+    &td2        &kp Z      &kp X     &kp C       &kp V      &kp B               &kp N     &kp M     &kp COMMA  &kp DOT    &kp FSLH     &td3
 //--------------------------------|          |          |           |      |           |          |          |---------------------------------//  
                                     &kp LGUI     &td0     &kp ENTER          &kp SPACE     &td1    &kp RALT
 //                                +----------|----------|-----------+      +-----------|----------|----------+                                 //
