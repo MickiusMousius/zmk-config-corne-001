@@ -36,7 +36,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "TAP_DANCE_2";
             #binding-cells = <0>;
-            tapping-term-ms = <200>;
+            tapping-term-ms = <350>;
             bindings = <&kp LSHFT>, <&caps_word>, <&kp CAPS>;
         };
         // Toggle capsword right
@@ -44,7 +44,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "TAP_DANCE_3";
             #binding-cells = <0>;
-            tapping-term-ms = <200>;
+            tapping-term-ms = <350>;
             bindings = <&kp RSHFT>, <&caps_word>, <&kp CAPS>;
         };
     };
