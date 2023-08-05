@@ -14,9 +14,6 @@
 #include <dt-bindings/zmk/keys.h>
 
 / {
-    &caps_word {
-        continue-list = <UNDERSCORE MINUS>;
-    };
     behaviors {
         // Toggle F-Keys Layer
         td0: tap_dance_0 {
