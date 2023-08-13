@@ -74,6 +74,28 @@
                 , <&macro_release &kp LGUI>
                 ;
         };
+        euro: euro {
+            label = "Euro";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_press &kp LALT>
+                , <&macro_press &kp LSHIFT>
+                , <&macro_tap &kp N2>
+                , <&macro_release &kp LSHFT>
+                , <&macro_release &kp LALT>
+                ;
+        };
+        gbp: gbp {
+            label = "GBP";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_press &kp LALT>
+                , <&macro_tap &kp N3>
+                , <&macro_release &kp LALT>
+                ;
+        };
     };
 
     keymap {
@@ -121,7 +143,7 @@
 //          |          |          |          |          |           |      |           |               |          |                   |               |          // 
     &trans    &kp EXCL    &kp AT    &kp HASH   &kp DLLR   &kp PRCNT          &kp CARET   &kp AMPERSAND   &kp STAR        &kp LPAR         &kp RPAR      &kp FSLH
 //          |          |          |          |          |           |      |           |               |          |                   |               |          // 
-   &trans      &trans      &trans    &trans     &trans     &trans            &kp EQUAL      &kp MINUS    &kp LBKT   &kp RIGHT_BRACKET   &kp BACKSLASH   &kp DOT
+   &trans      &trans      &trans     &gbp      &euro      &trans            &kp EQUAL      &kp MINUS    &kp LBKT   &kp RIGHT_BRACKET   &kp BACKSLASH   &kp DOT
 //--------------------------------|          |          |           |      |           |               |          |----------------------------------------------//  
                                     &kp LGUI    &trans     &trans              &trans        &trans      &kp RALT
 //                                +----------|----------|-----------+      +-----------|---------------|----------+                                              //
