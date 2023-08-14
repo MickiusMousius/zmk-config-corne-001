@@ -11,11 +11,12 @@
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 
-#define MACOS   0
-#define FKEYS   1
-#define NUMBERS 2
-#define WINDOWS 3
-#define W_FKEYS 4
+#define MACOS     0
+#define FKEYS     1
+#define NUMBERS   2
+#define WINDOWS   3
+#define W_FKEYS   4
+#define W_NUMBERS 5
 
 
 / {
@@ -25,6 +26,10 @@
         win_fkeys {
             if-layers = <WINDOWS FKEYS>;
             then-layer = <W_FKEYS>;
+        };
+        win_fkeys {
+            if-layers = <WINDOWS NUMBERS>;
+            then-layer = <W_NUMBERS>;
         };
     };
 
@@ -141,12 +146,38 @@
                 , <&macro_release &kp LALT>
                 ;
         };
+        weuro: weuro {
+            label = "W_Euro";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_press &kp LALT>
+                , <&macro_tap &kp N8>
+                , <&macro_tap &kp N3>
+                , <&macro_tap &kp N6>
+                , <&macro_tap &kp N4>
+                , <&macro_release &kp LALT>
+                ;
+        };
         gbp: gbp {
             label = "GBP";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
                 = <&macro_press &kp LALT>
+                , <&macro_tap &kp N3>
+                , <&macro_release &kp LALT>
+                ;
+        };
+        wgbp: wgbp {
+            label = "W_GBP";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_press &kp LALT>
+                , <&macro_tap &kp N0>
+                , <&macro_tap &kp N1>
+                , <&macro_tap &kp N6>
                 , <&macro_tap &kp N3>
                 , <&macro_release &kp LALT>
                 ;
@@ -163,6 +194,19 @@
                 , <&macro_release &kp LALT>
                 ;
         };
+        wdegr: wdegr {
+            label = "W_Degrees";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_press &kp LALT>
+                , <&macro_tap &kp N0>
+                , <&macro_tap &kp N1>
+                , <&macro_tap &kp N7>
+                , <&macro_tap &kp N6>
+                , <&macro_release &kp LALT>
+                ;
+        };
         elip: elip {
             label = "Ellipsis";
             compatible = "zmk,behavior-macro";
@@ -170,6 +214,19 @@
             bindings
                 = <&macro_press &kp LALT>
                 , <&macro_tap &kp SEMI>
+                , <&macro_release &kp LALT>
+                ;
+        };
+        welip: welip {
+            label = "W_Ellipsis";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_press &kp LALT>
+                , <&macro_tap &kp N0>
+                , <&macro_tap &kp N1>
+                , <&macro_tap &kp N3>
+                , <&macro_tap &kp N3>
                 , <&macro_release &kp LALT>
                 ;
         };
@@ -182,6 +239,16 @@
                 , <&macro_press &kp LCTRL>
                 , <&macro_tap &kp SPACE>
                 , <&macro_release &kp LCTRL>
+                , <&macro_release &kp LGUI>
+                ;
+        };
+        wpal: wpal {
+            label = "W_Pallette";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_press &kp LGUI>
+                , <&macro_tap &kp DOT>
                 , <&macro_release &kp LGUI>
                 ;
         };
@@ -257,7 +324,7 @@
         };
 
         windows_lower_layer {
-            label = "WF Keys";
+            label = "F Keys";
             bindings = <
 //------------------------------------------------------------------+      +-------------------------------------------------------------------//
 //          |          |          |          |          |           |      |           |          |          |          |          |           // 
@@ -272,6 +339,21 @@
             >;
         };
 
+        windows_raise_layer {
+            label = "Numbers";
+            bindings = <
+//------------------------------------------------------------------+      +-------------------------------------------------------------------//
+//          |          |          |          |          |           |      |           |          |          |          |          |           // 
+  &trans      &trans      &trans     &trans    &trans       &trans              &trans    &trans     &trans     &trans     &trans     &trans 
+//          |          |          |          |          |           |      |           |          |          |          |          |           //
+  &trans      &trans      &trans     &trans    &trans       &trans              &trans    &trans     &trans     &trans     &trans     &trans 
+//          |          |          |          |          |           |      |           |          |          |          |          |           //
+  &trans       &wpal      &welip     &wgbp     &weuro       &wdegr              &trans    &trans     &trans     &trans     &trans     &trans 
+//--------------------------------|          |          |           |      |           |          |          |---------------------------------//  
+                                    &trans     &trans       &trans              &trans    &trans     &trans
+//                                +----------|----------|-----------+      +-----------|----------|----------+                                 //
+            >;
+        };
 
 
 
