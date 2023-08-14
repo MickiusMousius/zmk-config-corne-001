@@ -27,7 +27,7 @@
             if-layers = <WINDOWS FKEYS>;
             then-layer = <W_FKEYS>;
         };
-        win_fkeys {
+        win_numbers {
             if-layers = <WINDOWS NUMBERS>;
             then-layer = <W_NUMBERS>;
         };
