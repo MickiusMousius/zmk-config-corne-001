@@ -158,7 +158,7 @@
 //          |          |          |          |          |           |      |           |          |          |          |          |           //
     &td2        &kp Z      &kp X     &kp C       &kp V      &kp B               &kp N     &kp M     &kp COMMA  &kp DOT    &kp FSLH     &td3
 //--------------------------------|          |          |           |      |           |          |          |---------------------------------//  
-                                    &kp LGUI     &td0     &kp ENTER          &kp SPACE     &td1    &kp RALT
+                                      &td4       &td0     &kp ENTER          &kp SPACE     &td1    &kp RALT
 //                                +----------|----------|-----------+      +-----------|----------|----------+                                 //
             >;
         };
