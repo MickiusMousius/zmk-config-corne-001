@@ -34,13 +34,6 @@
             tapping-term-ms = <300>;
             bindings = <&mo NUMBERS>, <&tog NUMPAD>, <&tog NUMBERS>;
         };
-        // Toggle Windows layer
-        td5: tap_dance_5 {
-            compatible = "zmk,behavior-tap-dance";
-            #binding-cells = <0>;
-            tapping-term-ms = <200>;
-            bindings = <&kp RGUI>, <&tog WINDOWS>;
-        };
         // Backspace a whole word when holding backspace
         backspace_word: backspace_word {
             compatible = "zmk,behavior-hold-tap";
@@ -131,15 +124,6 @@
                 , <&macro_release &kp LGUI>
                 ;
         };
-        wpal: wpal {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings
-                = <&macro_press &kp LGUI>
-                , <&macro_tap &kp DOT>
-                , <&macro_release &kp LGUI>
-                ;
-        };
         // Word backspace macros
         bsp_word: bsp_word {
             compatible = "zmk,behavior-macro";
@@ -190,7 +174,7 @@
 //          |         |          |           |          |        +-----------+   +-----------------|       |       |           |         |          |           //
   &kp LSHIFT  &kp Z     &kp X      &kp C        &kp V     &kp B                                      &kp N   &kp M   &kp COMMA   &kp DOT    &kp FSLH   &kp RSHIFT
 //--------------------|          |           |          |        |           |   |                 |       |       |           |--------------------------------//  
-                                               &kp LGUI     &td0     &kp ENTER      &lt NUMPAD SPACE   &td1    &td5   
+                                               &kp LGUI     &td0     &kp ENTER      &lt NUMPAD SPACE   &td1  &kp RALT   
 //                    +----------|-----------|----------|--------------------+   +-----------------|-------|--------|-----------|---------+                      //
             >;
         };
