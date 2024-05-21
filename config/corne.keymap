@@ -161,9 +161,9 @@
 //          |         |          |           |          |        |                                 |       |       |           |         |          |           //
   &kp TAB     &kp A     &kp S      &kp D        &kp F     &kp G                                      &kp H   &kp J     &kp K      &kp L    &kp SEMI    &kp SQT
 //          |         |          |           |          |        +-----------+   +-----------------|       |       |           |         |          |           //
-  &kp LSHIFT  &kp Z     &kp X      &kp C        &kp V     &kp B                                      &kp N   &kp M   &kp COMMA   &kp DOT    &kp FSLH   &kp RSHIFT
+  &kp LSHIFT  &kp Z     &kp X      &kp C        &kp V     &kp B                                      &kp N   &kp M   &kp COMMA   &kp DOT    &kp FSLH   &kp RALT
 //--------------------|          |           |          |        |           |   |                 |       |       |           |--------------------------------//  
-                                               &kp LGUI     &td0     &kp ENTER      &lt NUMPAD SPACE   &td1  &kp RALT   
+                                               &kp LGUI     &td0     &kp ENTER      &lt NUMPAD SPACE   &td1  &kp RCTRL   
 //                    +----------|-----------|----------|--------------------+   +-----------------|-------|--------|-----------|---------+                      //
             >;
         };
