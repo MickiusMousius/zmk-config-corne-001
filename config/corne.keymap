@@ -179,7 +179,7 @@
 //          |            |            |              |            |              +-------------+    +--------+          |          |           |         |           |           // 
     &trans      &trans       &trans     &kp C_VOL_DN   &kp C_MUTE   &kp C_VOL_UP                               &kp LEFT   &kp DOWN   &kp RIGHT   &scrcr    &kp PG_DN   &kp F13
 //-----------------------|            |              |            |              |             |    |        |          |          |           |         |-----------------------//  
-                                                       &kp RCTRL       &trans        &trans            &trans    &trans    &kp DEL           
+                                                       &kp RCTRL       &trans        &trans            &trans    &kp DEL    &trans           
 //                       +------------|--------------|------------|--------------|-------------+    +--------|----------|----------|-----------|---------+                       //
             >;
 
