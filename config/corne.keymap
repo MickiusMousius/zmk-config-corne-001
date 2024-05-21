@@ -239,7 +239,7 @@
 //          |          |          |          |          |          |                        |           |               |          |          |               |          // 
     &trans     &trans     &trans     &trans     &trans    &kp PRCNT                           &kp CARET      &kp N4        &kp N5     &kp N6     &kp PLUS      &kp FSLH
 //          |          |          |          |          |          +--------+     +---------|           |               |          |          |               |          // 
-    &trans     &wpal      &trans     &trans     &trans    &kp EQUAL                           &kp PRCNT      &kp N1        &kp N2     &kp N3     &kp ENTER     &kp STAR
+    &trans     &wpal      &trans     &trans     &trans    &kp EQUAL                           &kp PRCNT      &kp N1        &kp N2     &kp N3      &kp DOT      &kp STAR
 //---------------------|          |          |          |          |        |     |         |           |               |          |          |--------------------------//
                                                 &trans     &trans    &trans         &trans   &tog NUMPAD     &kp N0       
 //                     +----------|----------|----------|----------|--------+     +---------|-----------|---------------|----------|----------+                          //
