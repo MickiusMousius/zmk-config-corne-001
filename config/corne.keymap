@@ -13,8 +13,8 @@
 #define MACOS     0
 #define FKEYS     1
 #define NUMBERS   2
-#define NUMPAD    6
-#define KB_CONFIG 7
+#define NUMPAD    3
+#define KB_CONFIG 4
 
 
 / {
